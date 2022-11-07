@@ -3,7 +3,7 @@ const buttons = document.querySelectorAll("button");
 
 const input = document.querySelector("input");
 
-const colors = ["#970C10", "#BFCAD0", "#474440", "#004369"];
+const colors = ["#970C10", "green", "purple", "#004369"];
 
 let squares = 500;
 
@@ -39,6 +39,8 @@ const removeColor = (e) => {
 };
 
 let createSqures = () => {
+  container.innerHTML = "";
+
   for (i = 0; i < squares; i++) {
     const square = document.createElement("div");
     square.classList.add("square");
